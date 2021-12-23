@@ -76,7 +76,7 @@ class UserDaoMysql implements UserDAO {
         $sql->bindValue(':password', $u->password);
         $sql->bindValue(':name', $u->name);
         $sql->bindValue(':birthdate', $u->birthdate);
-        $sql->bindValue('city', $u->city);
+        $sql->bindValue(':city', $u->city);
         $sql->bindValue(':work', $u->work);
         $sql->bindValue(':avatar', $u->avatar);
         $sql->bindValue(':cover', $u->cover);
