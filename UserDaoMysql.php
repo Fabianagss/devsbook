@@ -70,7 +70,7 @@ class UserDaoMysql implements UserDAO {
             avatar = :avatar,
             cover = :cover,
             token = :token,
-            WHERE id = id");
+            WHERE id = :id");
 
         $sql->bindValue(':email', $u->email);
         $sql->bindValue(':password', $u->password);
